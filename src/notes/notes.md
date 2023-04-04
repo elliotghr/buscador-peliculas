@@ -1,0 +1,7 @@
+- Visualizar la respuesta del json directamente en la API y no en el console.log
+- Guardar una muestra de los datos en una carpeta mocks (tanto con datos como sin datos)
+- Hay que evitar tener un "contrato" de la API, esto se refiere a no utilizar elementos como -> movie.title, movie.poster, movie.Id, etc. sino hacer un map de estos desde un punto temprano y hacer que estas propiedades funcionen independientemente si la API es la misma o cambia con el tiempo
+- useRef es un hook que te permite crear una referencia mutable que persiste durante todo el ciclo de vida del componente, es muiy utili para guardar cualquier valor que quieras mutar como un identificador, como un elemento del DOM, como un ccntador y que cada vez que cambia no vuelve a renderizar el componente
+- La forma controlada de un formulario se refiere a que react va a conrolar lo que está en nuestros inputs, lo que escribimos y las validacionesy esto se hace con un estado
+- useCallback es lo mismo que useMemo pero simplifica la sintaxis para las funciones
+- Debounce: esperar a que el usurio deje de escribir, esto funciona porque espera n tiempo a realizar x accion, en este caso una llamada a la API, eso lo hacemos con el proyecto "Just" de Angus en github, usando just-debounce-it, el cual debe ser memorizado usando useCallback para que reconozca la misma función y que no se esté creando en cada cambio que se hace

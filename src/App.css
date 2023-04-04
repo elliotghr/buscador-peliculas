@@ -1,0 +1,30 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  width: inherit;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+li {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
